@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+:root {
+  --color-primary: #e5bd5b;
+  --color-secondary: #f2f2f2;
+  --color-complementary: #191919;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.App {
+  text-align: center;
+  background-color: var(--color-complementary);
+  padding: 0 30px;
+}
+
+.App-logo {
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 45px;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-secondary);
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.App-header p {
+  text-align: justify;
+  width: 100%;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.App-header p em {
+  color: var(--color-primary);
+}
+
+.App-header .subscription-form {
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto 60px;
+}
+
+.App-header .subscription-form > div {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  flex-direction: row;
+  position: relative;
+}
+
+.App-header .subscription-form > div > div {
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  transform: translate3d(0, 60px, 0);
+  text-align: left;
+}
+
+.App-header .subscription-form button {
+  background: var(--color-primary);
+  color: var(--color-complementary);
+  border: 0;
+  padding: 0;
+  height: 45px;
+  line-height: 45px;
+  width: 130px;
+  font-size: 1em;
+  font-weight: 600;
+  margin: 0 0 0 15px;
+  cursor: pointer;
+  transition: all .3s ease;
+  outline: 0;
+}
+
+.App-header .subscription-form button:hover,
+.App-header .subscription-form button:focus,
+.App-header .subscription-form button:active {
+  transform: translate3d(0, -5px, 0);
+}
+
+.App-header .subscription-form input[type="email"] {
+  width: 100%;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--color-primary);
+  color: var(--color-secondary);
+  font-size: 1em;
+  outline: 0;
+}
+
+.App-header .subscription-form input[type="email"]::placeholder {
+  font-size: 1em;
+  color: var(--color-secondary);
+  opacity: 1;
+}
+
+.App-link {
+  color: var(--color-primary);
+}
