@@ -6,6 +6,10 @@
   --color-complementary: #191919;
 }
 
+html {
+  background: var(--color-complementary);
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
