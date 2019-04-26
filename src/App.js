@@ -21,6 +21,8 @@ function App() {
         <div class="subscription-form">
           <MailchimpSubscribe url={url}/>
         </div>
+
+        <a class="archive-link" href="http://archivo.postalesdelatormenta.club/" title="Archivo">Archivo</a>
       </header>
     </div>
   );

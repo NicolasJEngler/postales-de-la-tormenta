@@ -36,6 +36,28 @@ body {
   max-width: 640px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+}
+
+.App-header .archive-link {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: auto;
+  left: 50%;
+  width: 100%;
+  text-align: right;
+  max-width: 520px;
+  transform: translate3d(-50%, 0, 0);
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.App-header .archive-link:hover,
+.App-header .archive-link:focus,
+.App-header .archive-link:active {
+  color: var(--color-primary);
+  text-decoration: none;
 }
 
 .App-header p {
